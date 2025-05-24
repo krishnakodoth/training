@@ -7,12 +7,14 @@ addTaskBtn.addEventListener("click", () => {
   const taskText = taskInput.value.trim();
   // Add your code here
   console.log("Adding new task:",taskText);
-  // Show toast
+  if(taskText === ""){
+    // Show toast
     Toastify({
-      text: "Task added!",
+      text: "Please provide a task",
       duration: 2000,
       gravity: "top",
       position: "right",
-      backgroundColor: "#4caf50",
+      backgroundColor: "rgb(236, 128, 27)",
     }).showToast();
+  }
 });
