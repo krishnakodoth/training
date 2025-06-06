@@ -19,3 +19,4 @@ function deleteTask() {
   const i = parseInt(index) - 1;
   // Add code to delete the task at index i
 }
+
